@@ -4,9 +4,9 @@ class Canon {
     int portee;
     int coup_par_seconde;
     int level;
-    const cout_init=100;
-    const cout_2=120;
-    const cout_3=150;
+    int cout_init;
+    int cout_2;
+    int cout_3;
   public:
     Canon();
     void level_up();
@@ -17,6 +17,9 @@ Canon::Canon() {
     this->portee=100;               //a redefinir
     this->coup_par_seconde=5;       //a redefinir
     this->level=1;
+    this->cout_init=100;
+    this->cout_2=120;
+    this->cout_3=150;
 }
 
 void Canon::level_up() {
@@ -41,9 +44,9 @@ class Canon_Glace {
     int portee;
     int coup_par_seconde;
     int level;
-    const cout_init=120;
-    const cout_2=150;
-    const cout_3=200;
+    int cout_init;
+    int cout_2;
+    int cout_3;
   public:
     Canon_Glace();
     void level_up();
@@ -54,6 +57,9 @@ Canon_Glace::Canon_Glace() {
     this->portee=150;               //a redefinir
     this->coup_par_seconde=2;       //a redefinir
     this->level=1;
+    this->cout_init=120;
+    this->cout_2=150;
+    this->cout_3=200;
 }
 
 void Canon_Glace::level_up() {
@@ -78,9 +84,9 @@ class Mortier {
     int portee;
     int coup_par_seconde;
     int level;
-    const cout_init=150;
-    const cout_2=200;
-    const cout_3=250;
+    int cout_init;
+    int cout_2;
+    int cout_3;
   public:
     Mortier();
     void level_up();
@@ -91,6 +97,9 @@ Mortier::Mortier() {
     this->portee=150;               //a redefinir
     this->coup_par_seconde=2;       //a redefinir
     this->level=1;
+    this->cout_init=150;
+    this->cout_2=200;
+    this->cout_3=250;
 }
 
 void Mortier::level_up() {
@@ -116,9 +125,9 @@ class Archers {
     int portee;
     int coup_par_seconde;
     int level;
-    const cout_init=70;
-    const cout_2=100;
-    const cout_3=120;
+    int cout_init;
+    int cout_2;
+    int cout_3;
   public:
     Archers();
     void level_up();
@@ -129,6 +138,9 @@ Archers::Archers() {
     this->portee=120;               //a redefinir
     this->coup_par_seconde=7;       //a redefinir
     this->level=1;
+    this->cout_init=70;
+    this->cout_2=100;
+    this->cout_3=120;
 }
 
 void Archers::level_up() {
