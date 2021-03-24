@@ -1,5 +1,5 @@
 class Canon {
-  private:
+private:
     int degat_par_coup;
     int portee;
     int coup_par_seconde;
@@ -7,15 +7,15 @@ class Canon {
     int cout_init;
     int cout_2;
     int cout_3;
-  public:
+public:
     Canon();
     void level_up();
 };
 
 Canon::Canon() {
     this->degat_par_coup=20;
-    this->portee=100;               //a redefinir
-    this->coup_par_seconde=5;       //a redefinir
+    this->portee=100;               //TODO
+    this->coup_par_seconde=5;       //TODO
     this->level=1;
     this->cout_init=100;
     this->cout_2=120;
@@ -26,20 +26,20 @@ void Canon::level_up() {
     if (this->level==1){
         this->level=2;
         this->degat_par_coup=40;
-        this->portee=120;               //a redefinir
-        this->coup_par_seconde=6;       //a redefinir
+        this->portee=120;               //TODO
+        this->coup_par_seconde=6;       //TODO
     }
     if (this->level==2){
         this->level=3;
         this->degat_par_coup=50;
-        this->portee=150;               //a redefinir
-        this->coup_par_seconde=8;       //a redefinir
+        this->portee=150;               //TODO
+        this->coup_par_seconde=8;       //TODO
     }
 }
 
 
 class Canon_Glace {
-  private:
+private:
     int degat_par_coup;
     int portee;
     int coup_par_seconde;
@@ -47,15 +47,15 @@ class Canon_Glace {
     int cout_init;
     int cout_2;
     int cout_3;
-  public:
+public:
     Canon_Glace();
     void level_up();
 };
 
 Canon_Glace::Canon_Glace() {
     this->degat_par_coup=10;
-    this->portee=150;               //a redefinir
-    this->coup_par_seconde=2;       //a redefinir
+    this->portee=150;               //TODO
+    this->coup_par_seconde=2;       //TODO
     this->level=1;
     this->cout_init=120;
     this->cout_2=150;
@@ -66,20 +66,20 @@ void Canon_Glace::level_up() {
     if (this->level==1){
         this->level=2;
         this->degat_par_coup=20;
-        this->portee=170;               //a redefinir
-        this->coup_par_seconde=3;       //a redefinir
+        this->portee=170;               //TODO
+        this->coup_par_seconde=3;       //TODO
     }
     if (this->level==2){
         this->level=3;
         this->degat_par_coup=30;
-        this->portee=200;               //a redefinir
-        this->coup_par_seconde=4;       //a redefinir
+        this->portee=200;               //TODO
+        this->coup_par_seconde=4;       //TODO
     }
 }
 
 
 class Mortier {
-  private:
+private:
     int degat_par_coup;
     int portee;
     int coup_par_seconde;
@@ -87,15 +87,15 @@ class Mortier {
     int cout_init;
     int cout_2;
     int cout_3;
-  public:
+public:
     Mortier();
     void level_up();
 };
 
 Mortier::Mortier() {
     this->degat_par_coup=30;
-    this->portee=150;               //a redefinir
-    this->coup_par_seconde=2;       //a redefinir
+    this->portee=150;               //TODO
+    this->coup_par_seconde=2;       //TODO
     this->level=1;
     this->cout_init=150;
     this->cout_2=200;
@@ -106,21 +106,21 @@ void Mortier::level_up() {
     if (this->level==1){
         this->level=2;
         this->degat_par_coup=60;
-        this->portee=170;               //a redefinir
-        this->coup_par_seconde=3;       //a redefinir
+        this->portee=170;               //TODO
+        this->coup_par_seconde=3;       //TODO
     }
     if (this->level==2){
         this->level=3;
         this->degat_par_coup=90;
-        this->portee=200;               //a redefinir
-        this->coup_par_seconde=4;       //a redefinir
+        this->portee=200;               //TODO
+        this->coup_par_seconde=4;       //TODO
     }
 }
 
 
 
 class Archers {
-  private:
+private:
     int degat_par_coup;
     int portee;
     int coup_par_seconde;
@@ -128,15 +128,15 @@ class Archers {
     int cout_init;
     int cout_2;
     int cout_3;
-  public:
+public:
     Archers();
     void level_up();
 };
 
 Archers::Archers() {
     this->degat_par_coup=15;
-    this->portee=120;               //a redefinir
-    this->coup_par_seconde=7;       //a redefinir
+    this->portee=120;               //TODO
+    this->coup_par_seconde=7;       //TODO
     this->level=1;
     this->cout_init=70;
     this->cout_2=100;
@@ -147,13 +147,13 @@ void Archers::level_up() {
     if (this->level==1){
         this->level=2;
         this->degat_par_coup=30;
-        this->portee=150;               //a redefinir
-        this->coup_par_seconde=10;       //a redefinir
+        this->portee=150;               //TODO
+        this->coup_par_seconde=10;       //TODO
     }
     if (this->level==2){
         this->level=3;
         this->degat_par_coup=45;
-        this->portee=170;               //a redefinir
-        this->coup_par_seconde=15;       //a redefinir
+        this->portee=170;               //TODO
+        this->coup_par_seconde=15;       //TODO
     }
 }
