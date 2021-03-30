@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainmenu.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="class_ennemis.h" />
