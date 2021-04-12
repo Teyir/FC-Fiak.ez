@@ -8,9 +8,9 @@ class mainMenu {
 
 	public:
 		mainMenu();
+
 		~mainMenu();
 
 
-	
 
 };
