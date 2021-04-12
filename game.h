@@ -1,7 +1,7 @@
 #pragma once
-#include <SFML/Graphics.hpp>
 
 #define mainloop
+
 
 class game {
 	static game* instance;

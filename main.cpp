@@ -1,6 +1,6 @@
-#include <iostream>
-#include <SFML/Graphics.hpp>
-#include "MainMenu.cpp"
+#include "Header.h"
+#include "game.h"
+
 
 
 
@@ -22,7 +22,9 @@ using namespace std;
 int main()
 {
 
-    mainMenu();
+    game Game;
+
+    Game.run();
 
     return 0;
 }

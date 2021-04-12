@@ -29,6 +29,7 @@
     <ClInclude Include="class_tours.h" />
     <ClInclude Include="forteresse.h" />
     <ClInclude Include="game.h" />
+    <ClInclude Include="Header.h" />
     <ClInclude Include="joueur.h" />
     <ClInclude Include="vague.h" />
   </ItemGroup>

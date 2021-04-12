@@ -1,4 +1,4 @@
-#include <SFML/Graphics.hpp>
+
 #include <iostream>
 #include "mainmenu.h"
 
@@ -7,16 +7,6 @@ mainMenu::mainMenu(){
     // Définition de la fenêtre (taille + titre)
     sf::RenderWindow window(sf::VideoMode(800, 600), "FC-Fiak | Menu Principal");
 
-
-    // Gestion de l'icone
-    sf::Image icon;
-
-    if (!icon.loadFromFile("ressources/img/icone.png"))
-    {
-        EXIT_FAILURE;
-    }
-
-    window.setIcon(93, 98, icon.getPixelsPtr());
 
     // Gestion de la police 
 
