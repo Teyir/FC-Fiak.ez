@@ -1,12 +1,15 @@
 #include <SFML/Graphics.hpp>
+#include <thread>
 
-class MainMenu {
+#define MAINMENU
 
-	int Menu() 
-    {
+class mainMenu {
 
 
-    }
+	public:
+		mainMenu();
+		~mainMenu();
+
 
 	
 
