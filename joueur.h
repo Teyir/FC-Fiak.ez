@@ -1,4 +1,4 @@
-class Score{
+class Score {
 private:
     int score;
     int niveau;
@@ -8,7 +8,7 @@ public:
 };
 
 Score::Score() {
-    this->score=0;
-    this->niveau=0;
-    this->solde=200;
+    this->score = 0;
+    this->niveau = 0;
+    this->solde = 200;
 }
