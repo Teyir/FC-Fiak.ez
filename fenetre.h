@@ -9,7 +9,7 @@ void Window() {
     sf::Image icon;
     if (!icon.loadFromFile("ressources/img/icone.png"))
     {
-        EXIT_FAILURE;
+        std::cout << "Erreur du chargement de icone.png" << std::endl;
     }
     window.setIcon(93, 98, icon.getPixelsPtr());
 
@@ -17,12 +17,15 @@ void Window() {
     sf::Font font;
     if (!font.loadFromFile("ressources/Hiatus.ttf"))
     {
-        EXIT_FAILURE;
-    }
+        std::cout << "Erreur du chargement de la police" << std::endl;
+    }   
 
 
     window.setPosition(sf::Vector2i(300, 70));    //150
     window.setFramerateLimit(60);
+
+
+
 
     int speed_animation = 0;
 
@@ -34,10 +37,12 @@ void Window() {
                 window.close();
         }
 
+        afficher_zombie();
+
         creation_tour();
-
-
         affichage_tours();
+
+
         window.display();
         window.clear();
     }

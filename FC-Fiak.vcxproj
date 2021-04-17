@@ -30,6 +30,7 @@
     <ClInclude Include="joueur.h" />
     <ClInclude Include="placer_tours.h" />
     <ClInclude Include="vague.h" />
+    <ClInclude Include="zombie.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
