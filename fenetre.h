@@ -38,6 +38,7 @@ void Window() {
         }
 
         afficher_zombie();
+        spawn_zombie();
 
         creation_tour();
         affichage_tours();

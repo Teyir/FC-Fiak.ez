@@ -1,6 +1,7 @@
 #include "Header.h"
 
 #pragma region variables
+
 sf::RenderWindow window;
 sf::Vector2i position_souris;
 
