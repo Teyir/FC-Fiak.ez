@@ -1,5 +1,4 @@
-#include <iostream>
-#include <SFML/Graphics.hpp>
+#include "Header.h"
 
 #pragma region variables
 sf::RenderWindow window;
