@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 #include <SFML/Graphics.hpp>
 
 
@@ -11,6 +12,7 @@ sf::Vector2i position_souris;
 #include "class_tours.h"
 #include "class_ennemis.h"
 #include "placer_tours.h"
+#include "detection_ennemis.h"
 
 
 int main()
