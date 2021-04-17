@@ -1,6 +1,6 @@
 #pragma region variables
 int place = 1;
-int selection = 0;
+int selection = 1;
 sf::Texture Archer_t;
 sf::Texture Canon_t;
 sf::Texture Canon_glace_t;
@@ -21,11 +21,11 @@ std::vector<Archers*> archers;
 void creation_tour() {
 
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Numpad0)) {
-        int selection = 0;
+        selection = 0;
         place = 0;
     }
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Numpad1)) {
-        int selection = 1;
+        selection = 1;
         place = 0;
     }
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Numpad2)) {
