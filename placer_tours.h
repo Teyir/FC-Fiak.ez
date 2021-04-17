@@ -40,7 +40,7 @@ void creation_tour() {
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Enter) && place == 0) {
         sf::Vector2i position_souris = sf::Mouse::getPosition(window);
         if (selection == 0) {
-            if (!Canon_t.loadFromFile("canon1.png")) {
+            if (!Canon_t.loadFromFile("ressources/img/canon1.png")) {
                 std::cout << "Erreur du chargement de canon1.png" << std::endl;
             }
             Canon_t.setSmooth(true);
@@ -54,7 +54,7 @@ void creation_tour() {
             place = 1;
         }
         else if (selection == 1) {
-            if (!Canon_glace_t.loadFromFile("glace1.png")) {
+            if (!Canon_glace_t.loadFromFile("ressources/img/glace1.png")) {
                 std::cout << "Erreur du chargement de glace1.png" << std::endl;
             }
             Canon_glace_t.setSmooth(true);
@@ -68,7 +68,7 @@ void creation_tour() {
             place = 1;
         }
         else if (selection == 2) {
-            if (!Mortier_t.loadFromFile("mortier1.png")) {
+            if (!Mortier_t.loadFromFile("ressources/img/mortier1.png")) {
                 std::cout << "Erreur du chargement de mortier1.png" << std::endl;
             }
             Mortier_t.setSmooth(true);
@@ -82,7 +82,7 @@ void creation_tour() {
             place = 1;
         }
         else if (selection == 3) {
-            if (!Archer_t.loadFromFile("archer1.png")) {
+            if (!Archer_t.loadFromFile("ressources/img/archer1.png")) {
                 std::cout << "Erreur du chargement de archer1.png" << std::endl;
             }
             Archer_t.setSmooth(true);

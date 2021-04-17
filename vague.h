@@ -12,15 +12,15 @@ public class WaveSpawner : WaveSpawner {
 
     private int waveNumber = 1;
 
-    void update() {
-        if (Coutdown <= 0) {
+    void update (){
+        if (Coutdown <= 0){
             Wave1();
             Coutdown = BetweenWaves
         }
-        Coutdown--;
+        Coutdown --;
     }
 
-    void Wave1() {
+    void Wave1(){
         for (int i = 0; i < waveNumber; ++i) {
             SpawnEnnemy1();
             Delay(1000);
@@ -49,7 +49,7 @@ public class WaveSpawner : WaveSpawner {
         //30 Zombie/15 Tank/50 Runner
     }
      */
-    void SpawnEnnemy1() {
+    void SpawnEnnemy1(){
         instantiate(Ennemy, SpawnPoint.position, SpawnPoint.rotation);
     }
 };
