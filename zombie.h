@@ -76,5 +76,15 @@ void affichage_zombies() {
         // Affichage du zombie
         window.draw(sprites_zombies[i]);
 
+
+
+       
+
     }
+}
+
+
+void deplacement_zombie() {
+
+    
 }

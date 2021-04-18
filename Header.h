@@ -5,6 +5,7 @@
 #include <SFML/Graphics.hpp>
 #include <thread>        
 #include <chrono>   
+#include <math.h>
 
 
 #define HAUTEUR 900

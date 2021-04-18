@@ -1,4 +1,6 @@
-#pragma once
+#pragma region variables
+
+#pragma endregion variables
 
 
 void Window() {
@@ -20,6 +22,17 @@ void Window() {
         std::cout << "Erreur du chargement de la police" << std::endl;
     }
 
+    // Gestion de la map
+    sf::Texture map;
+    sf::Sprite sprite_map;
+    if (!map.loadFromFile("ressources/img/map.png"))
+    {
+        std::cout << "Erreur de chargement de la map" << std::endl;
+    }
+    sprite_map.setTexture(map);
+    sprite_map.setScale(2.8, 1.8);
+    map.setSmooth(true);
+
 
     window.setPosition(sf::Vector2i(300, 70));    //150
     window.setFramerateLimit(60);
@@ -39,7 +52,7 @@ void Window() {
                 window.close();
         }
 
-
+        window.draw(sprite_map);
 
         creation_tour();
         affichage_tours();
