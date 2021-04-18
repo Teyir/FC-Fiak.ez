@@ -6,20 +6,20 @@ private:
     int pieces;
     sf::Vector2i position;
 public:
-    Zombie(int x, int y);
+    Zombie();
     void prendre_degats(int nb_degats);
     sf::Vector2i get_position() {
         return this->position;
+
     }
+
 };
 
-Zombie::Zombie(int x, int y) {
+Zombie::Zombie() {
     this->HP = 50;
     this->Degat = 2;
     this->vitesse = 5;    //TODO
     this->pieces = 10;
-    this->position.x = x;
-    this->position.y = y;
 }
 
 void Zombie::prendre_degats(int nb_degats) {
