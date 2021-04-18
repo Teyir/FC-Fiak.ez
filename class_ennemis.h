@@ -12,7 +12,7 @@ public:
         return this->position;
 
     }
-
+    void emplacement(int x, int y);
 };
 
 Zombie::Zombie() {
@@ -24,6 +24,11 @@ Zombie::Zombie() {
 
 void Zombie::prendre_degats(int nb_degats) {
     this->HP -= nb_degats;
+}
+void Zombie::emplacement(int x, int y) {
+
+    this->position.x = x;
+    this->position.y = y;
 }
 
 

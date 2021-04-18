@@ -18,7 +18,7 @@ void Window() {
     if (!font.loadFromFile("ressources/Hiatus.ttf"))
     {
         std::cout << "Erreur du chargement de la police" << std::endl;
-    }   
+    }
 
 
     window.setPosition(sf::Vector2i(300, 70));    //150
@@ -38,7 +38,6 @@ void Window() {
         }
 
         afficher_zombie();
-        spawn_zombie();
 
         creation_tour();
         affichage_tours();

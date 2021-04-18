@@ -2,7 +2,7 @@
 #include <iostream>
 #include "mainmenu.h"
 
-mainMenu::mainMenu(){
+mainMenu::mainMenu() {
 
     // Définition de la fenêtre (taille + titre)
     sf::RenderWindow window(sf::VideoMode(800, 600), "FC-Fiak | Menu Principal");
