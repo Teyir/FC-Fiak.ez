@@ -11,7 +11,6 @@ sf::Vector2i position_souris;
 #include "class_tours.h"
 #include "placer_tours.h"
 #include "zombie.h"
-#include "detection_ennemis.h"
 
 
 

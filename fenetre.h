@@ -29,6 +29,8 @@ void Window() {
 
     int speed_animation = 0;
 
+  
+
     while (window.isOpen())
     {
         sf::Event event;
@@ -37,11 +39,15 @@ void Window() {
                 window.close();
         }
 
-        afficher_zombie();
+
 
         creation_tour();
         affichage_tours();
 
+
+   
+        spawn_zombie();
+        affichage_zombies();
 
         window.display();
         window.clear();
