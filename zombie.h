@@ -3,7 +3,7 @@
 sf::Texture zombie;
 sf::Sprite sprite_zombie;
 
-enum Dir{Down,Left,Right,Up};
+enum Dir { Down, Left, Right, Up };
 sf::Vector2i anim(1, Down);
 
 std::vector<sf::Sprite> sprites_zombies;
@@ -34,15 +34,15 @@ void afficher_zombie() {
 
     sprite_zombie.setTexture(zombie);
 
-        anim.x++;
-        if (anim.x * sizeZombie >= zombie.getSize().x)
-            anim.x = 0;
-    
+    anim.x++;
+    if (anim.x * sizeZombie >= zombie.getSize().x)
+        anim.x = 0;
+
 
 
 
     sprite_zombie.setTextureRect(sf::IntRect(anim.x * sizeZombie, anim.y * sizeZombie, sizeZombie, sizeZombie));
-    
+
 
     window.draw(sprite_zombie);
 
@@ -67,7 +67,7 @@ void spawn_zombie() {
 
 
         window.draw(sprite_zombie);
-        
+
     }
 
 

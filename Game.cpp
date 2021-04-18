@@ -8,13 +8,13 @@
 game* game::instance = nullptr;
 
 
-game::game() 
-	:window(sf::VideoMode(WIDTH, HEIGHT), "FC-Fiak | Tower Defense")
+game::game(int WIDTH, int HEIGHT)
+    :window(sf::VideoMode(WIDTH, HEIGHT), "FC-Fiak | Tower Defense")
 {
 
-	if (instance == nullptr) {
-		instance = this;
-	}
+    if (instance == nullptr) {
+        instance = this;
+    }
 
 
     // Gestion de l'icone

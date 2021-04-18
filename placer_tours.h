@@ -40,6 +40,7 @@ void creation_tour() {
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Enter) && place == 0) {
         sf::Vector2i position_souris = sf::Mouse::getPosition(window);
         if (selection == 0) {
+            std::cout << "Canon" << std::endl;
             if (!Canon_t.loadFromFile("ressources/img/canon1.png")) {
                 std::cout << "Erreur du chargement de canon1.png" << std::endl;
             }
@@ -54,6 +55,7 @@ void creation_tour() {
             place = 1;
         }
         else if (selection == 1) {
+            std::cout << "Glace" << std::endl;
             if (!Canon_glace_t.loadFromFile("ressources/img/glace1.png")) {
                 std::cout << "Erreur du chargement de glace1.png" << std::endl;
             }
@@ -68,6 +70,7 @@ void creation_tour() {
             place = 1;
         }
         else if (selection == 2) {
+            std::cout << "Mortier" << std::endl;
             if (!Mortier_t.loadFromFile("ressources/img/mortier1.png")) {
                 std::cout << "Erreur du chargement de mortier1.png" << std::endl;
             }
@@ -82,6 +85,7 @@ void creation_tour() {
             place = 1;
         }
         else if (selection == 3) {
+            std::cout << "Archer" << std::endl;
             if (!Archer_t.loadFromFile("ressources/img/archer1.png")) {
                 std::cout << "Erreur du chargement de archer1.png" << std::endl;
             }
@@ -100,12 +104,8 @@ void creation_tour() {
 }
 
 
-void affichage_tours() {
-    int taille = archers.size();
-    for (int i = 0; i < taille; i++) {
-        window.draw(sprites_archers[i]);
-    }
-    taille = canons.size();
+void affichage_tours(){
+    int taille = canons.size();
     for (int i = 0; i < taille; i++) {
         window.draw(sprites_canons[i]);
     }
@@ -116,5 +116,9 @@ void affichage_tours() {
     taille = mortiers.size();
     for (int i = 0; i < taille; i++) {
         window.draw(sprites_mortiers[i]);
+    }
+    taille = archers.size();
+    for (int i = 0; i < taille; i++){
+        window.draw(sprites_archers[i]);
     }
 }

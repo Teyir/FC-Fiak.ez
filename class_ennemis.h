@@ -11,6 +11,7 @@ public:
     sf::Vector2i get_position() {
         return this->position;
     }
+    void emplacement(int x, int y);
 };
 
 Zombie::Zombie(int x, int y) {
@@ -24,6 +25,11 @@ Zombie::Zombie(int x, int y) {
 
 void Zombie::prendre_degats(int nb_degats) {
     this->HP -= nb_degats;
+}
+void Zombie::emplacement(int x, int y) {
+
+    this->position.x = x;
+    this->position.y = y;
 }
 
 
