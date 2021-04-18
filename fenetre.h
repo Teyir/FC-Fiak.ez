@@ -1,7 +1,3 @@
-#pragma region variables
-
-#pragma endregion variables
-
 
 void Window() {
     window.create(sf::VideoMode(LARGEUR, HAUTEUR), "FC-Fiak | Tower defense");
@@ -30,7 +26,7 @@ void Window() {
         std::cout << "Erreur de chargement de la map" << std::endl;
     }
     sprite_map.setTexture(map);
-    sprite_map.setScale(2.8, 1.8);
+    
     map.setSmooth(true);
 
 
@@ -57,10 +53,13 @@ void Window() {
         creation_tour();
         affichage_tours();
 
+        affichage_chateau();
+
 
    
         spawn_zombie();
         affichage_zombies();
+        deplacement_zombie();
 
         window.display();
         window.clear();

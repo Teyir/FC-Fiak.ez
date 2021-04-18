@@ -10,6 +10,7 @@ sf::Vector2i position_souris;
 #include "class_ennemis.h"
 #include "class_tours.h"
 #include "placer_tours.h"
+#include "chateau.h"
 #include "zombie.h"
 
 

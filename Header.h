@@ -6,6 +6,10 @@
 #include <thread>        
 #include <chrono>   
 #include <math.h>
+#include <locale>    
+#include <vector>
+#include <time.h>
+#include <cstdlib>
 
 
 #define HAUTEUR 900
