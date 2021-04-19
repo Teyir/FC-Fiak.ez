@@ -21,7 +21,7 @@ public:
 };
 
 Zombie::Zombie(int x, int y) {
-    this->HP = 50;
+    this->HP = 50;       //TODO remettre 50
     this->Degat = 2;
     this->vitesse = 5;
     this->pieces = 10;
