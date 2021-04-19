@@ -3,20 +3,16 @@
 void attaque() {
 	for (int i = 0; i < canons.size(); i++)
 	{
-		std::cout << "boucle" << std::endl;
 		if (canons[i]->get_cible() != NULL)
 		{
-			std::cout << "non null" << std::endl;
 			canons[i]->increment_compteur_attaque();
 			if (canons[i]->get_compteur_attaque() >= (60 / canons[i]->get_coup_par_seconde())) {
-				std::cout << "attaque" << std::endl;
 				if (canons[i]->get_cible() != NULL) {
 					canons[i]->get_cible()->prendre_degats(canons[i]->get_degats());
 					canons[i]->reset_compteur_attaque();
 				}
 			}
 			if (canons[i]->get_cible()->get_HP() <= 0) {
-				std::cout << "mort" << std::endl;
 				joueur->gagner_argent(canons[i]->get_cible()->get_pieces());
 				sprites_zombies[canons[i]->get_position_ennemi()].setColor(sf::Color::Transparent);
 				canons[i]->set_cible(NULL);
