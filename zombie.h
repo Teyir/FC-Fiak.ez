@@ -9,7 +9,6 @@ sf::Vector2i anim(1, Right);
 std::vector<sf::Sprite> sprites_zombies;
 std::vector<Zombie*> zombies;
 
-
 int sizeZombie = 32;
 
 int maxZombie = 10;
@@ -19,6 +18,7 @@ bool finit = false;
 int temps_spawn = 0;
 
 int vitesse_animation = 0;
+
 
 
 #pragma endregion variables
@@ -50,22 +50,16 @@ void spawn_zombie() {
             Zombie* monzombie = new Zombie(-10, 360);
             zombies.push_back(monzombie);
 
-
             std::cout << "Zombie n " << zonzon << " vient de spawn" << std::endl;
 
             zonzon++;
 
-        }
 
-        
+        }
 
     }
 
 }
-
-
-
-
 
 void affichage_zombies() {
 
@@ -104,24 +98,19 @@ void deplacement_zombie() {
     for (int i = 0; i < taille; i++) {
 
         sprites_zombies[i].move(3, 0);
+        sf::Vector2i pos_zombie = zombies[i]->get_position();
+        zombies[i]->emplacement(pos_zombie.x + 3, pos_zombie.y);
         
 
         if (sprites_zombies[i].getPosition().x >= 1480)
         {
 
-
-            std::cout << "Le zombie " << i << " vient de toucher le chateau" << std::endl;
-
+            //std::cout << "Le zombie " << i << " vient de toucher le chateau" << std::endl;
             sprites_zombies[i].setColor(sf::Color::Transparent);
 
-
-
-            zombies.erase(zombies.begin()+i);
-       
-
         }
+
 
     }
 
 }
-
