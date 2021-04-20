@@ -1,5 +1,5 @@
 #pragma region variables
-
+//textures et sprites
 sf::Texture Zombie_t;
 sf::Sprite sprite_zombie;
 
@@ -12,6 +12,7 @@ sf::Sprite sprite_runner;
 sf::Texture Mage_t;
 sf::Sprite sprite_mage;
 
+//tableaux des ennemis et de leurs sprites pour les déplacer par la suite
 std::vector<sf::Sprite> sprites_zombies;
 std::vector<Zombie*> zombies;
 
@@ -24,6 +25,7 @@ std::vector<Runner*> runners;
 std::vector<sf::Sprite> sprites_mages;
 std::vector<Mage*> mages;
 
+//pour gerer le mouvement des ennemis
 enum Dir { Down, Left, Right, Up };
 sf::Vector2i anim(1, Right);
 
