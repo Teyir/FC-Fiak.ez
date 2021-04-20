@@ -146,6 +146,7 @@ private:
 public:
     Mage(int x, int y);
     void regen();
+
     void prendre_degats(int nb_degats);
     sf::Vector2i get_position() {
         return this->position;
@@ -179,4 +180,18 @@ void Mage::emplacement(int x, int y) {
 
     this->position.x = x;
     this->position.y = y;
+}
+
+
+void Mage::regen() {
+
+    // Toutes les 2 secondes le mage récupère 25 points de vie
+    if ((double)clock() / CLOCKS_PER_SEC >= 2)
+    {
+        std::cout << "Le mage se regene" << std::endl;
+        this->HP += 25;
+
+    }
+
+
 }

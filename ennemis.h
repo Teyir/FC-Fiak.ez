@@ -343,10 +343,32 @@ void deplacement_runner() {
 
 void spawn_mage() {
 
+
     // Texture mage
-    if (!Mage_t.loadFromFile("ressources/img/mage.png"))
+    if (clock() / CLOCKS_PER_SEC != 2)
     {
-        std::cout << "Erreur du chargement de mage.png" << std::endl;
+        if (!Mage_t.loadFromFile("ressources/img/mage.png"))
+        {
+            std::cout << "Erreur du chargement de mage.png" << std::endl;
+        }
+    }
+
+    // Toutes les 2 secondes la texture change ( on se base sur le temps de la regénération des points de vie du mage )
+    // On calcul tous les multiples de 2
+    int n = 2;
+    int m = n;
+    for (n = 1; n <= 100; ++n)
+    {
+        if (n % m == 0)
+          
+        if (clock() / CLOCKS_PER_SEC == n)
+        {
+            // Texture mage
+            if (!Mage_t.loadFromFile("ressources/img/mage_regen.png"))
+            {
+                std::cout << "Erreur du chargement de mage_regen.png" << std::endl;
+            }
+        }
     }
 
     if (magmag < maxMage && finit == false) {
@@ -364,6 +386,7 @@ void spawn_mage() {
 
             Mage* monmage = new Mage(-10, 360);
             mages.push_back(monmage);
+            monmage->regen();
 
             std::cout << "Mage n " << magmag << " vient de spawn" << std::endl;
 

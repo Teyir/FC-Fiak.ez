@@ -10,6 +10,7 @@
 #include <vector>
 #include <time.h>
 #include <cstdlib>
+#include <thread>
 
 
 #define HAUTEUR 900

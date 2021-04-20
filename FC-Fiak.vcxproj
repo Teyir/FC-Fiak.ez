@@ -31,6 +31,7 @@
     <ClInclude Include="Header.h" />
     <ClInclude Include="joueur.h" />
     <ClInclude Include="loose.h" />
+    <ClInclude Include="mage_regen.h" />
     <ClInclude Include="pause.h" />
     <ClInclude Include="placer_tours.h" />
     <ClInclude Include="chateau.h" />
