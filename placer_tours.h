@@ -2,6 +2,8 @@
 int place = 1;
 int selection = 0;
 
+int gold = 200;
+
 //textures des tours
 sf::Texture Archer_t;
 sf::Texture Canon_t;
@@ -24,26 +26,34 @@ std::vector<Archers*> archers;
 
 void creation_tour() {
     //selection de la tour a placer
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && gold >= 100) {
         selection = 0;
         place = 0;
+        gold -= 100;
+        std::this_thread::sleep_for(std::chrono::milliseconds(50));
     }
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right) && gold >= 120) {
         selection = 1;
         place = 0;
+        gold -= 120;
+        std::this_thread::sleep_for(std::chrono::milliseconds(50));
     }
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down) && gold >= 150) {
         selection = 2;
         place = 0;
+        gold -= 150;
+        std::this_thread::sleep_for(std::chrono::milliseconds(50));
     }
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left) && gold >= 70) {
         selection = 3;
         place = 0;
+        gold -= 70;
+        std::this_thread::sleep_for(std::chrono::milliseconds(50));
     }
 
 
     //placement de la tour
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Enter) && place == 0) {
+    if (place == 0) {
         sf::Vector2i position_souris = sf::Mouse::getPosition(window);
         //pour verifier qu'on a bien demander de placer une tour avant
         if (selection == 0) {

@@ -32,6 +32,7 @@
     <ClInclude Include="pause.h" />
     <ClInclude Include="placer_tours.h" />
     <ClInclude Include="chateau.h" />
+    <ClInclude Include="shop.h" />
     <ClInclude Include="vague.h" />
     <ClInclude Include="ennemis.h" />
   </ItemGroup>

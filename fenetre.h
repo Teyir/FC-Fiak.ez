@@ -1,4 +1,4 @@
-
+#include "shop.h"
 void Window() {
     window.create(sf::VideoMode(LARGEUR, HAUTEUR), "FC-Fiak | Tower defense");
 
@@ -71,6 +71,8 @@ void Window() {
         spawn_mage();
         affichage_mages();
         deplacement_mage();
+
+        affichage_coin();
 
         window.display();
         window.clear();
