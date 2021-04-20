@@ -22,16 +22,18 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="class_chateau.h" />
     <ClInclude Include="class_ennemis.h" />
     <ClInclude Include="class_tours.h" />
     <ClInclude Include="fenetre.h" />
     <ClInclude Include="Header.h" />
     <ClInclude Include="joueur.h" />
+    <ClInclude Include="loose.h" />
     <ClInclude Include="pause.h" />
     <ClInclude Include="placer_tours.h" />
     <ClInclude Include="chateau.h" />
     <ClInclude Include="vague.h" />
-    <ClInclude Include="zombie.h" />
+    <ClInclude Include="ennemis.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

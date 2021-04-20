@@ -49,15 +49,28 @@ void Window() {
         detection();
         attaque();
 
-        creation_tour();
-        affichage_tours();
-
+        affichage_vie_chateau();
         affichage_chateau();
 
+        creation_tour();
+        affichage_tours();  
 
+        // ENNEMIS
         spawn_zombie();
         affichage_zombies();
         deplacement_zombie();
+
+        spawn_tank();
+        affichage_tanks();
+        deplacement_tank();
+
+        spawn_runner();
+        affichage_runners();
+        deplacement_runner();
+
+        spawn_mage();
+        affichage_mages();
+        deplacement_mage();
 
         window.display();
         window.clear();
