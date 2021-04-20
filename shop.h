@@ -1,4 +1,3 @@
-
 sf::Text goldText;
 sf::Sprite coin;
 sf::Texture coinTexture;
@@ -7,7 +6,7 @@ sf::Texture coinTexture;
 void affichage_coin() {
 
     //Afficher le nombre de coins disponible
-    std::string gold_string = std::to_string(gold);
+    std::string gold_string = std::to_string(joueur->get_argent());
 
     goldText.setString(gold_string);
     goldText.setFont(font);

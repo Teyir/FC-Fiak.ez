@@ -22,6 +22,7 @@ public:
         return this->vitesse;
     }
 
+
 };
 
 Zombie::Zombie(int x, int y) {

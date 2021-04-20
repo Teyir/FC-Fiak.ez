@@ -10,6 +10,7 @@ Score* joueur = new Score();
 int loose_screen = 0;
 #pragma endregion variables
 
+#include "shop.h"
 #include "loose.h"
 #include "class_ennemis.h"
 #include "class_tours.h"

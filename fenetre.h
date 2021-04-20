@@ -1,4 +1,3 @@
-#include "shop.h"
 void Window() {
     window.create(sf::VideoMode(LARGEUR, HAUTEUR), "FC-Fiak | Tower defense");
 
