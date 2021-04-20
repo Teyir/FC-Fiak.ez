@@ -4,7 +4,7 @@ sf::Texture Chateau_t;
 sf::Sprite sprite_chateau;
 
 // Points de vie du château
-Chateau* Base = new Chateau(30);
+Chateau* Base = new Chateau(7);
 
 int ChateauHP = Base->Get_HP();
 
@@ -23,6 +23,7 @@ void affichage_chateau() {
         std::cout << "Erreur du chargement de chateau.png" << std::endl;
     }
 
+    // On joue avec 3 textures selon les dégats subits par les zombies au château  
 
 
     if (Base->Get_HP() <= ChateauHP / 1.3)

@@ -92,7 +92,8 @@ void spawn_zombie() {
         if (temps_spawnZ == 20) 
         {
             temps_spawnZ = 0;
-
+            
+            // On créé les zombies
             Zombie_t.setSmooth(true);
             sf::Sprite sprite_zombie;
             sprite_zombie.setTexture(Zombie_t);
@@ -132,7 +133,7 @@ void affichage_zombies() {
                 anim.x = 0;
             }
         }
-
+        //Ce bout de code permet de recarder les sprites des zombies
         sprites_zombies[i].setTextureRect(sf::IntRect(anim.x * sizeEnnemis, anim.y * sizeEnnemis, sizeEnnemis, sizeEnnemis));
         sprites_zombies[i].setScale(1.5, 1.5);
 
@@ -154,6 +155,7 @@ void deplacement_zombie() {
         sf::Vector2i pos_zombie = zombies[i]->get_position();
         zombies[i]->emplacement(pos_zombie.x + 3, pos_zombie.y);
 
+        // Quand le zombie arrive aux coordonnés du chateau il meurt
         if (sprites_zombies[i].getPosition().x >= 1480)
         {
             if (zombies[i]->get_HP() > 0)
@@ -565,7 +567,7 @@ void affichage_vagues() {
     window.draw(affichage_vague);
 
 }
-
+/*
 void nouvelle_vague() {
 
     maxZombie = origineZombie * numero_vague;
@@ -584,17 +586,60 @@ void nouvelle_vague() {
     std::cout << "\nMax Mage " << maxMage << std::endl;
     
 }
+*/
+void vague3() {
 
+    std::cout << "Début vague 3" << std::endl;
+
+    maxZombie = 45;
+    maxRunner = 20;
+    maxTank = 15;
+    maxMage = 20;
+
+    zombiesEnVie = maxZombie;
+    runnersEnVie = maxRunner;
+    tanksEnVie = maxTank;
+    magesEnVie = maxMage;
+
+    std::cout << "\nMax zombie " << maxZombie << std::endl;
+    std::cout << "\nMax Runner " << maxRunner << std::endl;
+    std::cout << "\nMax Tank " << maxTank << std::endl;
+    std::cout << "\nMax Mage " << maxMage << std::endl;
+
+}
+
+void vague2() {
+
+    std::cout << "Début vague 2" << std::endl;
+
+    maxZombie = 25;
+    maxRunner = 10;
+    maxTank = 7;
+    maxMage = 12;
+
+    zombiesEnVie = maxZombie;
+    runnersEnVie = maxRunner;
+    tanksEnVie = maxTank;
+    magesEnVie = maxMage;
+
+    std::cout << "\nMax zombie " << maxZombie << std::endl;
+    std::cout << "\nMax Runner " << maxRunner << std::endl;
+    std::cout << "\nMax Tank " << maxTank << std::endl;
+    std::cout << "\nMax Mage " << maxMage << std::endl;
+
+}
 
 void changement_vagues() {
-
     int total_ennemis = zombiesEnVie + tanksEnVie + runnersEnVie + magesEnVie;
 
     if (total_ennemis <= 0)
     {
+        std::cout << "Changement de vague !" << std::endl;
         numero_vague += 1;
 
-        nouvelle_vague();
+        vague2();
+       
+
 
     }
 
