@@ -26,17 +26,14 @@
     <ClInclude Include="class_chateau.h" />
     <ClInclude Include="class_ennemis.h" />
     <ClInclude Include="class_tours.h" />
-    <ClInclude Include="compteur_ennemis.h" />
     <ClInclude Include="detection_ennemis.h" />
     <ClInclude Include="fenetre.h" />
     <ClInclude Include="Header.h" />
     <ClInclude Include="joueur.h" />
     <ClInclude Include="loose.h" />
-    <ClInclude Include="pause.h" />
     <ClInclude Include="placer_tours.h" />
     <ClInclude Include="chateau.h" />
     <ClInclude Include="shop.h" />
-    <ClInclude Include="vague.h" />
     <ClInclude Include="ennemis.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
