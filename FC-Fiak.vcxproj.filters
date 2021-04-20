@@ -65,7 +65,7 @@
     <ClInclude Include="detection_ennemis.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="mage_regen.h">
+    <ClInclude Include="compteur_ennemis.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
   </ItemGroup>

@@ -44,6 +44,7 @@ void Window() {
 
         window.draw(sprite_map);
 
+        affichage_vagues();
         
         detection();
         attaque();
@@ -72,6 +73,9 @@ void Window() {
         deplacement_mage();
 
         affichage_coin();
+        affichage_compteur_ennemis();
+
+        changement_vagues();
 
         window.display();
         window.clear();

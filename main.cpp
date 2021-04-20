@@ -22,8 +22,7 @@ int loose_screen = 0;
 #include "ennemis.h"
 #include "detection_ennemis.h"
 #include "attaquer_ennemis.h"
-
-
+#include "compteur_ennemis.h"
 
 
 
