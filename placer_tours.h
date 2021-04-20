@@ -23,26 +23,32 @@ std::vector<Archers*> archers;
 
 
 void creation_tour() {
-    //selection de la tour a placer
+    //Int permettent de prendre la taille des canons et de l'incrémenter dans une autre variable
     int Size_canons = canons.size();
     int Size_canons_glace = canons_glace.size();
     int Size_mortiers = mortiers.size();
     int Size_archers = archers.size();
+    //ici on vérifie si un canons à déjà été posé et si non on renvoi vers un else permettent alors de poser le 1er cannon
     if (Size_canons > 0) {
         sf::Vector2i position_souris = sf::Mouse::getPosition(window);
+        // une fois que le premier canon est posé alors il passe dans ce if qui vérifie si la tour n'est pas au dessus de la tour précédente
         if ((std::abs((position_souris.x) - (canons[Size_canons - 1]->get_position().x)) > 30) ||
             (std::abs((position_souris.y) - (canons[Size_canons - 1]->get_position().y)) > 70)) {
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && joueur->get_argent() >= 100) {
+                //permet de savoir quel tour à été choisi
                 selection = 0;
                 place = 0;
                 joueur->paiement(100);
             }
         }
     }
+    // else qui permet alors de poser la première tour
     else {
+        //ici on vérifie si la touche Up donc flèche du haut est presser ET si le joueur possède assez d'argent dans son solde pour acheter la tour
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && joueur->get_argent() >= 100) {
             selection = 0;
             place = 0;
+            //fonction qui permet le système de paiement lors de la pose d'une tour 
             joueur->paiement(100);
         }
     }
