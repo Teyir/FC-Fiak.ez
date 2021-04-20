@@ -17,7 +17,7 @@ private:
     int compteur_attaque;
     int position_ennemi;
 public:
-    //constructeurs, getteur, setteurs
+    //constructeurs, getteurs, setteurs...
     Canon(int x, int y);
     void level_up();
     sf::Vector2i get_position() {

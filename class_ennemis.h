@@ -1,11 +1,13 @@
 class Zombie {
 private:
+    //variables de la classe en privé pour ne pouvoir y accéder que pas des fonctions
     int HP;
     int Degat;
     int vitesse;
     int pieces;
     sf::Vector2i position;
 public:
+    //constructeurs, getteurs, setteurs...
     Zombie(int x, int y);
     void prendre_degats(int nb_degats);
     sf::Vector2i get_position() {
@@ -21,8 +23,6 @@ public:
     int get_vitesse() {
         return this->vitesse;
     }
-
-
 };
 
 Zombie::Zombie(int x, int y) {
