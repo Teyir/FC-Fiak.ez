@@ -1,19 +1,22 @@
+
+//class pour les difèrents énnemi et leurs composition
 class Zombie {
 private:
-    //variables de la classe en privé pour ne pouvoir y accéder que pas des fonctions
+    //Composition de l'ennemi
     int HP;
     int Degat;
     int vitesse;
     int pieces;
     sf::Vector2i position;
 public:
-    //constructeurs, getteurs, setteurs...
     Zombie(int x, int y);
     void prendre_degats(int nb_degats);
+    //position de l'énnemi
     sf::Vector2i get_position() {
         return this->position;
     }
     void emplacement(int x, int y);
+    //getteurs
     int get_HP() {
         return this->HP;
     }
@@ -23,8 +26,10 @@ public:
     int get_vitesse() {
         return this->vitesse;
     }
-};
 
+
+};
+//constructeur Zombie (utilité/20 du commentaire)
 Zombie::Zombie(int x, int y) {
     this->HP = 50;
     this->Degat = 2;
@@ -33,10 +38,11 @@ Zombie::Zombie(int x, int y) {
     this->position.x = x;
     this->position.y = y;
 }
-
+//Le nom de la fonction le décrits bien, non ?
 void Zombie::prendre_degats(int nb_degats) {
     this->HP -= nb_degats;
 }
+//cette fonction TRES complexe permet alors la récuperation des Coordonées Gps via un Satellite, ah non juste les coordonnées du Zombie
 void Zombie::emplacement(int x, int y) {
 
     this->position.x = x;
