@@ -30,7 +30,7 @@ void creation_tour() {
     int Size_archers = archers.size();
     if (Size_canons > 0) {
         sf::Vector2i position_souris = sf::Mouse::getPosition(window);
-        if ((std::abs((position_souris.x) - (canons[Size_canons - 1]->get_position().x)) > 30) &&
+        if ((std::abs((position_souris.x) - (canons[Size_canons - 1]->get_position().x)) > 30) ||
             (std::abs((position_souris.y) - (canons[Size_canons - 1]->get_position().y)) > 70)) {
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && joueur->get_argent() >= 100) {
                 selection = 0;
@@ -48,7 +48,7 @@ void creation_tour() {
     }
     if (Size_canons_glace > 0) {
         sf::Vector2i position_souris = sf::Mouse::getPosition(window);
-        if ((std::abs((position_souris.x) - (canons_glace[Size_canons_glace - 1]->get_position().x)) > 30) &&
+        if ((std::abs((position_souris.x) - (canons_glace[Size_canons_glace - 1]->get_position().x)) > 30) ||
             (std::abs((position_souris.y) - (canons_glace[Size_canons_glace - 1]->get_position().y)) > 70)) {
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right) && joueur->get_argent() >= 120) {
                 selection = 1;
@@ -66,7 +66,7 @@ void creation_tour() {
     }
     if (Size_mortiers > 0) {
         sf::Vector2i position_souris = sf::Mouse::getPosition(window);
-        if ((std::abs((position_souris.x) - (mortiers[Size_mortiers - 1]->get_position().x)) > 30) &&
+        if ((std::abs((position_souris.x) - (mortiers[Size_mortiers - 1]->get_position().x)) > 30) ||
             (std::abs((position_souris.y) - (mortiers[Size_mortiers - 1]->get_position().y)) > 70)) {
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down) && joueur->get_argent() >= 150) {
                 selection = 2;
@@ -84,7 +84,7 @@ void creation_tour() {
     }
     if (Size_archers > 0) {
         sf::Vector2i position_souris = sf::Mouse::getPosition(window);
-        if ((std::abs((position_souris.x) - (archers[Size_archers - 1]->get_position().x)) > 30) &&
+        if ((std::abs((position_souris.x) - (archers[Size_archers - 1]->get_position().x)) > 30) ||
             (std::abs((position_souris.y) - (archers[Size_archers - 1]->get_position().y)) > 70)) {
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left) && joueur->get_argent() >= 70) {
                 selection = 3;
